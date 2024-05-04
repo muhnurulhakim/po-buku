@@ -41,6 +41,7 @@
     }
     input {
       width: 100%;
+      max-width: 400px;
       padding: 10px;
       margin-bottom: 10px;
       border: 1px solid #ccc;
@@ -60,13 +61,26 @@
       font-size: 18px;
       margin-bottom: 30px;
     }
+
+    /* Gaya responsif */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+      input {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Pre-Order Ebook: Jangan Jadi Content Creator! karena sulit!</h1>
     <p>Ebook ini menjelaskan bagaimana menjadi content creator yang bermanfaat dan berkualitas, dengan mengungkap tantangan serta strategi untuk mengatasi hambatan dalam perjalanan menjadi content creator profesional.</p>
-    <img src="https://tribelio-s3-production-temp.s3.ap-southeast-1.amazonaws.com/imgupload/20240501/1/6/0/1/0/202405011601001bda4c789c38754f639a376716c5859f" alt="Ebook Cover">
+    <img src="https://tribelio-s3-production-temp.s3.ap-southeast-1.amazonaws.com/imgupload/20240501/1/6/0/1/0/202405011601001bda4c789c38754f639a376716c5859f." alt="Ebook Cover">
     <form id="lead-form">
       <input type="text" placeholder="Nama Lengkap" id="name" required>
       <input type="email" placeholder="Email" id="email" required>
